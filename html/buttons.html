@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Buttons
+		</title>
+	</head>
+
+	<body>
+		<a href="https://www.google.com.br">
+			<button style="background-color: #333333;color: #00FF00;border-radius: 5px;">
+				To Google
+			</button>
+		</a>
+
+		<button onclick="doSomething()" style="background-color:aquamarine;">
+			Click me
+		</button>
+		
+		<p id="test">
+			Hello
+		</p>
+
+		<script>
+			function doSomething(){
+				document.getElementById("test").innerHTML = "Goodbye";
+			}
+		</script>
+
+	</body>
+</html>

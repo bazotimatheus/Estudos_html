@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>
+			Forms
+		</title>
+	</head>
+
+	<body>
+		<form action="action_page" method="POST">
+			<!--
+				method="GET" apend to URL; good for search, not good for password.
+				method="POST" needs a server
+			-->
+			<div>
+				<label for="fname">First name: </label>
+				<input type="text" id="fname" name="fname" placeholder="Spongebob" required>
+			</div>
+			
+			<br>
+
+			<div>
+				<label for="lname">Last name: </label>
+				<input type="text" id="lname" name="lname" placeholder="Squarepants" required>
+			</div>
+			
+			<br>
+
+			<div>
+				<label for="pass">Password: </label>
+				<input type="password" id="pass" name="pass" maxlength="12" placeholder="Strong Password" required>
+			</div>
+			
+			<br>
+
+			<div>
+				<label for="email">E-mail: </label>
+				<input type="email" id="email" name="email" placeholder="spongebob@squarepants.com" required>
+			</div>
+			
+			<br>
+
+			<div>
+				<label for="phone">Phone Number: </label>
+				<input type="phone" id="phone" name="phone" placeholder="(12) 3 4567-8900" required>
+			</div>
+			
+			<br>
+
+			<div>
+				<label for="bdate">Birth date: </label>
+				<input type="date" id="bdate" name="bdate" required>
+			</div>
+			
+			<br>
+
+			<div>
+				<label for="quantity">Level: </label>
+				<input type="number" id="quantity" name="quantity" min="0" max="9999" placeholder="100" required>
+			</div>
+
+			<br>
+
+			<div>
+				<label for="title">Title: </label>
+
+				<label for="Mr.">Mr.</label>
+				<input type="radio" id="Mr." name="title" value="Mr.">
+
+				<label for="Mrs.">Mrs.</label>
+				<input type="radio" id="Mrs." name="title" value="Mrs.">
+
+				<label for="PhD.">PhD.</label>
+				<input type="radio" id="PhD." name="title" value="PhD.">
+			</div>
+
+			<br>
+
+			<div>
+				<label for="payment">Payment</label>
+				<select id="payment" name="payment">
+					<option value="visa">Visa</option>
+					<option value="mastercard">Mastercard</option>
+					<option value="giftcard">GiftCard</option>
+			</div>
+
+			<br>
+
+			<div>
+				<label for="subscribe">Subscribe: </label>
+				<input type="checkbox" id="subscribe" name="subscribe">
+			</div>
+
+			<br>
+
+			<div>
+				<input type="reset">
+			</div>
+			
+			<br>
+
+			<div>
+				<input type="submit">
+			</div>
+
+		</form>
+	</body>
+</html>
